@@ -47,8 +47,18 @@ git checkout -b myNewBranch
 git branch -a
 ```
 
-.gitignore contains the files it ignores, like passwords
-After that, you can add all files with :
+- .gitignore contains the files it ignores, like passwords. Multiple syntaxes:
+```txt
+mySecretFile.txt
+*.secret.txt
+keys/*
+```
+- After that, you can add all files with :
 ```bash
 git add .
+```
+
+- Check differences with last commit. Like `git status` but for inner content.
+```bash
+git diff [file]
 ```
