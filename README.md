@@ -36,3 +36,19 @@ git remote add origin link_to_the_repo
 ```bash
 gh push -u origin main
 ```
+
+- Create a branch
+```bash
+git checkout -b myNewBranch
+```
+
+- List all branches
+```bash
+git branch -a
+```
+
+.gitignore contains the files it ignores, like passwords
+After that, you can add all files with :
+```bash
+git add .
+```
