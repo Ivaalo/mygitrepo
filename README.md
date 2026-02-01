@@ -65,5 +65,8 @@ git diff [file]
 
 - Merge but keep the history of the branch (myBranch) to not be on the parent branch
 ```bash
+git add .
+git commit -m "My description" // on myBranch
+git checkout main
 git merge --no-ff myBranch
 ```
