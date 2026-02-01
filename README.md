@@ -36,3 +36,37 @@ git remote add origin link_to_the_repo
 ```bash
 gh push -u origin main
 ```
+
+- Create a branch
+```bash
+git checkout -b myNewBranch
+```
+
+- List all branches
+```bash
+git branch -a
+```
+
+- .gitignore contains the files it ignores, like passwords. Multiple syntaxes:
+```txt
+mySecretFile.txt
+*.secret.txt
+keys/*
+```
+- After that, you can add all files with :
+```bash
+git add .
+```
+
+- Check differences with last commit. Like `git status` but for inner content.
+```bash
+git diff [file]
+```
+
+- Merge but keep the history of the branch (myBranch) to not be on the parent branch
+```bash
+git add .
+git commit -m "My description" // on myBranch
+git checkout main
+git merge --no-ff myBranch
+```
